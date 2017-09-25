@@ -1,0 +1,36 @@
+<% include partials/header  %>
+
+    <div class="container text-center">
+        <button class="btn btn-primary btn-lg" style="margin-top:10px;float:left;">Recent Searches</button>
+    </div>
+    <% for (var key in list) {  %>
+
+
+
+
+        <a href="#" id="<%= list[key].name %>" class="btn btn-primary" style="margin-top:20px;">
+            <%= list[key].name %>
+        </a>
+
+
+
+        <% }%>
+
+
+            <div style="margin-top:20px;" class="text-center"><button class="btn btn-primary btn-lg"><%=text %></button>
+            
+            <div>
+                 
+            
+           <% for (var key in result) {  %>
+            <img src="<%= result[key] %>" alt="">
+            
+            <% } %>
+            
+            </div>
+            
+            
+            </div>
+
+
+            <% include partials/footer %>

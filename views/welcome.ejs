@@ -1,0 +1,26 @@
+<% include partials/header %>
+
+    <div class="container">
+
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-3 text-center">Image Scrapper</h1>
+                <p class="lead text-center">Made by Mohd Shadman</p>
+            </div>
+        </div>
+        <button class="btn btn-outline-primary btn-lg" style="margin-bottom:15px">  <a  href="/">Home</a></button>
+        
+
+
+
+        <div class="text-center">
+            <form class="form-control" action="/db" method="get">
+                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" placeholder="Search images" name="searchtext">
+
+                <button type="submit" class="btn btn-primary btn-lg" style="margin-top:10px">Search</button>
+            </form>
+        </div>
+    </div>
+    <% include partials/footer %>
